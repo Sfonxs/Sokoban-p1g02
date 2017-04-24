@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<fx:root maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="347.0" prefWidth="250.0" style="-fx-background-color: white;" type="Pane" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label layoutX="51.0" layoutY="114.0" text="%gui_aanmeldenGebruikersnaam" />
+      <Label layoutX="51.0" layoutY="174.0" text="%gui_aanmeldenWachtwoord" />
+      <TextField fx:id="txfGebruikersnaam" layoutX="51.0" layoutY="137.0" promptText="%gui_gebruikersnaam" />
+      <PasswordField fx:id="txfWachtwoord" layoutX="51.0" layoutY="197.0" onKeyPressed="#txfWachtwoordOnKeyPressed" promptText="%gui_wachtwoord" />      
+      <Button fx:id="btnArrow" ellipsisString="" layoutX="88.0" layoutY="265.0" mnemonicParsing="false" onAction="#btnArrowOnAction" prefHeight="73.0" prefWidth="0.0" style="-fx-background-color: white; -fx-cursor: hand;" text="Button">
+         <graphic>
+            <ImageView fx:id="imgArrow" fitHeight="59.0" fitWidth="54.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../resources/images/Pijl.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button fx:id="btnArrowBack" ellipsisString="" layoutX="200.0" layoutY="14.0" mnemonicParsing="false" onAction="#btnArrowBackOnAction" prefHeight="39.0" prefWidth="16.0" style="-fx-background-color: white; -fx-cursor: hand;" text="Button">
+         <graphic>
+            <ImageView fx:id="imgArrow1" fitHeight="36.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true" style="-fx-rotate: 180;">
+               <image>
+                  <Image url="@../resources/images/kruis.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+   </children>
+</fx:root>

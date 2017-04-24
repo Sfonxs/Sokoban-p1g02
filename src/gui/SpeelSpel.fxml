@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<fx:root fx:id="panePane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="500.0" style="-fx-background-color: white;" type="Pane" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Button fx:id="btnArrowBack" ellipsisString="" layoutY="727.0" mnemonicParsing="false" onAction="#btnArrowBackOnAction" prefHeight="73.0" prefWidth="0.0" style="-fx-background-color: white; -fx-cursor: hand;" text="Button">
+         <graphic>
+            <ImageView fx:id="imgArrow1" fitHeight="59.0" fitWidth="54.0" pickOnBounds="true" preserveRatio="true" style="-fx-rotate: 180;">
+               <image>
+                  <Image url="@../resources/images/Pijl.png" />
+               </image>
+            </ImageView>
+         </graphic></Button>
+      <Button fx:id="btnStop" layoutX="427.0" layoutY="737.0" mnemonicParsing="false" onAction="#btnStopOnAction" prefHeight="27.0" prefWidth="16.0" style="-fx-background-color: white; -fx-cursor: hand;">
+         <graphic>
+            <ImageView fx:id="imgStop" fitHeight="53.0" fitWidth="59.0" pickOnBounds="true" preserveRatio="true" style="-fx-cursor: hand;">
+               <image>
+                  <Image url="@../resources/images/Stop.png" />
+               </image>
+            </ImageView>
+         </graphic></Button>
+      <Label layoutX="57.0" layoutY="645.0" prefHeight="21.0" prefWidth="387.0" style="-fx-alignment: center; -fx-border-color: #019fdc;" text="%speelspel_bewegen" textFill="#019fdc" />
+      <Button fx:id="btnReset" layoutX="214.0" layoutY="731.0" mnemonicParsing="false" onAction="#btnResetOnAction" prefHeight="61.0" prefWidth="54.0" style="-fx-background-color: white; -fx-cursor: hand;">
+         <graphic>
+            <ImageView fitHeight="60.0" fitWidth="57.0" pickOnBounds="true" preserveRatio="true" style="-fx-rotate: 90;">
+               <image>
+                  <Image url="@../resources/images/reset.png" />
+               </image>
+            </ImageView>
+         </graphic></Button>
+      <Label fx:id="lblWins" layoutX="57.0" layoutY="569.0" prefHeight="63.0" prefWidth="387.0" style="-fx-alignment: center; -fx-border-color: #019fdc;" text="..." textFill="#019fdc" />
+      <Label fx:id="lblStappen" layoutX="57.0" layoutY="536.0" prefHeight="21.0" prefWidth="387.0" style="-fx-alignment: center; -fx-border-color: #019fdc;" text="Aantal stappen: 0" textFill="#019fdc" />
+   </children>
+</fx:root>

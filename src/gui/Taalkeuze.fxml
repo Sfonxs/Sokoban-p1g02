@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.collections.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<fx:root maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: white;" type="Pane" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <ImageView fitHeight="109.0" fitWidth="62.0" layoutX="269.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../resources/images/S.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="232.0" layoutY="154.0" text="%gui_kiesUwTaal">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+     <ComboBox fx:id="cmbTaal" layoutX="200.0" layoutY="200.0" onAction="#cmbTaalOnAction" prefWidth="200.0" promptText="Taal">
+      <items>
+        <FXCollections fx:factory="observableArrayList">
+          <String fx:value="Item 1" />
+          <String fx:value="Item 2" />
+          <String fx:value="Item 3" />
+        </FXCollections>
+      </items>
+    </ComboBox>
+    <Button fx:id="btnArrow" layoutX="272.0" layoutY="245.0" mnemonicParsing="false" onAction="#btnArrowOnAction" prefHeight="73.0" prefWidth="0.0" style="-fx-background-color: white; -fx-cursor: hand;">
+         <graphic>
+            <ImageView fx:id="imgArrow" fitHeight="59.0" fitWidth="54.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../resources/images/Pijl.png" />
+               </image>
+            </ImageView>
+         </graphic></Button>
+      <Button fx:id="btnStop" layoutX="530.0" layoutY="338.0" mnemonicParsing="false" onAction="#btnStopOnAction" prefHeight="27.0" prefWidth="16.0" style="-fx-background-color: white; -fx-cursor: hand;">
+         <graphic>
+            <ImageView fx:id="imgStop" fitHeight="53.0" fitWidth="59.0" pickOnBounds="true" preserveRatio="true" style="-fx-cursor: hand;">
+               <image>
+                  <Image url="@../resources/images/Stop.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+   </children>
+</fx:root>

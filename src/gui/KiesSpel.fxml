@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.collections.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<fx:root fx:id="panePane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: white;" type="Pane" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      
+      <Label fx:id="lblKiesEenSpel" layoutX="205.0" layoutY="28.0" prefHeight="21.0" prefWidth="193.0" style="-fx-alignment: center;" text="%kies_spel_kies" />
+      <Separator fx:id="sepSeperatorHorizontal" layoutX="209.0" layoutY="66.0" prefWidth="200.0" />
+       <ComboBox fx:id="cmbSpelKeuze" layoutX="160.0" layoutY="98.0" prefHeight="31.0" prefWidth="291.0" promptText="%kies_spel_spel">
+      <items>
+        <FXCollections fx:factory="observableArrayList">
+             </FXCollections>
+      </items>
+    </ComboBox>
+    <Button fx:id="btnArrow" layoutX="326.0" layoutY="320.0" mnemonicParsing="false" onAction="#btnArrowOnAction" prefHeight="73.0" prefWidth="0.0" style="-fx-background-color: white; -fx-cursor: hand;">
+         <graphic>
+            <ImageView fx:id="imgArrow" fitHeight="59.0" fitWidth="54.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../resources/images/Pijl.png" />
+               </image>
+            </ImageView>
+         </graphic></Button>
+      <Button fx:id="btnStop" layoutX="530.0" layoutY="338.0" mnemonicParsing="false" onAction="#btnStopOnAction" prefHeight="27.0" prefWidth="16.0" style="-fx-background-color: white; -fx-cursor: hand;">
+         <graphic>
+            <ImageView fx:id="imgStop" fitHeight="53.0" fitWidth="59.0" pickOnBounds="true" preserveRatio="true" style="-fx-cursor: hand;">
+               <image>
+                  <Image url="@../resources/images/Stop.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Label fx:id="lblKiesEenSpel1" layoutX="203.0" layoutY="161.0" prefHeight="21.0" prefWidth="193.0" style="-fx-alignment: center;" text="%kies_spel_speler" />
+      <Separator fx:id="sepSeperatorHorizontal1" layoutX="200.0" layoutY="199.0" prefWidth="200.0" />
+      <GridPane fx:id="gridAvatars" alignment="BOTTOM_CENTER" layoutX="-7.0" layoutY="257.0" prefHeight="46.0" prefWidth="614.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+      </GridPane>
+     <Button fx:id="btnArrowBack" ellipsisString="" layoutX="209.0" layoutY="320.0" mnemonicParsing="false" onAction="#btnArrowBackOnAction" prefHeight="73.0" prefWidth="0.0" style="-fx-background-color: white; -fx-cursor: hand;" text="Button">
+      <graphic>
+         <ImageView fx:id="imgArrow1" fitHeight="59.0" fitWidth="54.0" pickOnBounds="true" preserveRatio="true" style="-fx-rotate: 180;">
+            <image>
+               <Image url="@../resources/images/Pijl.png" />
+            </image>
+         </ImageView>
+      </graphic>
+   </Button>
+   </children>
+</fx:root>

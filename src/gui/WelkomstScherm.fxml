@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.collections.*?>
+<?import javafx.scene.shape.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<fx:root maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: white;" type="Pane" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label fx:id="lblWelkom" layoutX="57.0" layoutY="25.0" prefHeight="21.0" prefWidth="487.0" style="-fx-alignment: center; -fx-background-color: white; -fx-border-color: #019FDC;" text="Welkom" textFill="#019fdc">
+         <font>
+            <Font size="27.0" />
+         </font></Label>
+      <Label fx:id="lblMaakEenKeuze" layoutX="244.0" layoutY="81.0" text="%gui_maakEenKeuze" />
+      <Button fx:id="btnStop" layoutX="530.0" layoutY="338.0" mnemonicParsing="false" onAction="#btnStopOnAction" prefHeight="27.0" prefWidth="16.0" style="-fx-background-color: white; -fx-cursor: hand;">
+         <graphic>
+            <ImageView fx:id="imgStop" fitHeight="53.0" fitWidth="59.0" pickOnBounds="true" preserveRatio="true" style="-fx-cursor: hand;">
+               <image>
+                  <Image url="@../resources/images/Stop.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button fx:id="btnArrowBack" ellipsisString="" layoutX="264.0" layoutY="302.0" mnemonicParsing="false" onAction="#btnArrowBackOnAction" prefHeight="73.0" prefWidth="0.0" style="-fx-background-color: white; -fx-cursor: hand;" text="Button">
+         <graphic>
+            <ImageView fx:id="imgArrow1" fitHeight="59.0" fitWidth="54.0" pickOnBounds="true" preserveRatio="true" style="-fx-rotate: 180;">
+               <image>
+                  <Image url="@../resources/images/Pijl.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button fx:id="btnSpeelSpel" layoutX="57.0" layoutY="149.0" mnemonicParsing="false" onAction="#btnSpeelSpelOnAction" prefHeight="103.0" prefWidth="137.0" text="%gui_speelSpel" />
+      <Button fx:id="btnConfNieuwSpel" layoutX="202.0" layoutY="149.0" mnemonicParsing="false" onAction="#btnConfNieuwSpelOnAction" prefHeight="103.0" prefWidth="197.0" text="%gui_ConfigNieuwSpel" />
+      <Button fx:id="btnWijzigSpel" layoutX="407.0" layoutY="149.0" mnemonicParsing="false" onAction="#btnWijzigSpelOnAction" prefHeight="103.0" prefWidth="137.0" text="%gui_wijzigSpel" />
+      <Separator layoutX="131.0" layoutY="120.0" prefHeight="3.0" prefWidth="336.0" />
+   </children>
+</fx:root>

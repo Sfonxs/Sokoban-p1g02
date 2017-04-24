@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<fx:root maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="347.0" prefWidth="250.0" style="-fx-background-color: white;" type="Pane" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label layoutX="51.0" layoutY="31.0" prefHeight="21.0" prefWidth="149.0" text="%gui_geefUwNaam" />
+      <Label layoutX="51.0" layoutY="91.0" prefHeight="21.0" prefWidth="149.0" text="%gui_geefUwVoorNaam" />
+      <Label layoutX="51.0" layoutY="154.0" prefHeight="21.0" prefWidth="198.0" text="%gui_geefUwGebruikersnaam" />
+      <Label layoutX="51.0" layoutY="215.0" prefHeight="21.0" prefWidth="191.0" text="%gui_geefUwWachtwoord" />
+      <TextField fx:id="txfNaam" layoutX="51.0" layoutY="55.0" promptText="%gui_naam" />
+      <TextField fx:id="txfVoornaam" layoutX="51.0" layoutY="117.0" promptText="%gui_firstName" />
+      <TextField fx:id="txfGebruikersnaam" layoutX="51.0" layoutY="182.0" onKeyReleased="#txfGebruikersnaamOnKeyReleased" promptText="%gui_username" />
+      <Button fx:id="btnArrow" ellipsisString="" layoutX="86.0" layoutY="269.0" mnemonicParsing="false" onAction="#btnArrowOnAction" prefHeight="72.0" prefWidth="74.0" style="-fx-background-color: white; -fx-cursor: hand;" text="Button">
+         <graphic>
+            <ImageView fx:id="imgArrow" fitHeight="59.0" fitWidth="54.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../resources/images/Pijl.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button fx:id="btnArrowBack" ellipsisString="" layoutX="200.0" layoutY="14.0" mnemonicParsing="false" onAction="#btnArrowBackOnAction" prefHeight="39.0" prefWidth="16.0" style="-fx-background-color: white; -fx-cursor: hand;" text="Button">
+         <graphic>
+            <ImageView fx:id="imgArrow1" fitHeight="36.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true" style="-fx-rotate: 180;">
+               <image>
+                  <Image url="@../resources/images/kruis.png" />
+               </image>
+               <rotationAxis>
+                  <Point3D />
+               </rotationAxis>
+            </ImageView>
+         </graphic>
+      </Button>
+      <ProgressIndicator fx:id="piProgressCircleUsername" layoutX="14.0" layoutY="162.0" onMouseEntered="#piProgressCircleUsernameOnMouseEntered" onMouseExited="#piProgressCircleUsernameOnMouseExited" prefHeight="50.0" prefWidth="28.0" progress="0.0" visible="false" />
+      <ProgressIndicator fx:id="piProgressCirclePass" layoutX="14.0" layoutY="226.0" onMouseEntered="#piProgressCirclePassMouseEntered" onMouseExited="#piProgressCirclePassMouseExited" prefHeight="50.0" prefWidth="28.0" progress="0.0" visible="false" />
+      <Label fx:id="lblUsernameRules" layoutX="47.0" layoutY="150.0" prefHeight="64.0" prefWidth="209.0" style="-fx-background-color: white; -fx-border-color: red;" text="Username rules" textFill="RED" visible="false">
+         <font>
+            <Font name="System Italic" size="11.0" />
+         </font></Label>
+      <Label fx:id="lblPassRules1" layoutX="47.0" layoutY="215.0" prefHeight="21.0" prefWidth="209.0" style="-fx-background-color: white; -fx-border-color: red;" text="Username rules" textFill="RED" visible="false">
+         <font>
+            <Font name="System Italic" size="11.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblPassRules2" layoutX="47.0" layoutY="233.0" prefHeight="21.0" prefWidth="209.0" style="-fx-background-color: white; -fx-border-color: red;" text="Username rules" textFill="RED" visible="false">
+         <font>
+            <Font name="System Italic" size="11.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblPassRules3" layoutX="47.0" layoutY="253.0" prefHeight="21.0" prefWidth="209.0" style="-fx-background-color: white; -fx-border-color: red;" text="Username rules" textFill="RED" visible="false">
+         <font>
+            <Font name="System Italic" size="11.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblPassRules4" layoutX="47.0" layoutY="273.0" prefHeight="21.0" prefWidth="209.0" style="-fx-background-color: white; -fx-border-color: red;" text="Username rules" textFill="RED" visible="false">
+         <font>
+            <Font name="System Italic" size="11.0" />
+         </font>
+      </Label>
+      <PasswordField fx:id="txfWachtwoord" layoutX="51.0" layoutY="242.0" onKeyReleased="#txfWachtwoordOnKeyReleased" promptText="%gui_wachtwoord" />
+   </children>
+</fx:root>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.collections.*?>
+<?import javafx.scene.shape.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<fx:root maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: white;" type="Pane" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+          
+      <Button fx:id="btnStop" layoutX="530.0" layoutY="338.0" mnemonicParsing="false" onAction="#btnStopOnAction" prefHeight="27.0" prefWidth="16.0" style="-fx-background-color: white; -fx-cursor: hand;">
+         <graphic>
+            <ImageView fx:id="imgStop" fitHeight="53.0" fitWidth="59.0" pickOnBounds="true" preserveRatio="true" style="-fx-cursor: hand;">
+               <image>
+                  <Image url="@../resources/images/Stop.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+  
+      <Label layoutX="80.0" layoutY="89.0" text="%gui_keuze" />
+
+      <Button fx:id="btnAanmelden" layoutX="77.0" layoutY="129.0" mnemonicParsing="false" onAction="#btnAanmeldenOnAction" prefHeight="47.0" prefWidth="142.0" text="%gui_aanmelden" />
+      <Button fx:id="btnRegistreren" layoutX="77.0" layoutY="228.0" mnemonicParsing="false" onAction="#btnRegistrerenOnAction" prefHeight="47.0" prefWidth="142.0" text="%gui_registreren" />
+      <Button fx:id="btnArrowBack" ellipsisString="" layoutX="111.0" layoutY="296.0" mnemonicParsing="false" onAction="#btnArrowBackOnAction" prefHeight="73.0" prefWidth="0.0" style="-fx-background-color: white; -fx-cursor: hand;" text="Button">
+         <graphic>
+            <ImageView fx:id="imgArrow1" fitHeight="59.0" fitWidth="54.0" pickOnBounds="true" preserveRatio="true" style="-fx-rotate: 180;">
+               <image>
+                  <Image url="@../resources/images/Pijl.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <VBox fx:id="vbLRKeuze" layoutX="285.0" layoutY="27.0" prefHeight="347.0" prefWidth="192.0" />
+      <ImageView fx:id="imgLogo" fitHeight="73.0" fitWidth="38.0" layoutX="92.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../resources/images/S.png" />
+         </image>
+      </ImageView>
+      <Separator fx:id="sepSeperatorVertical" layoutX="252.0" layoutY="35.0" orientation="VERTICAL" prefHeight="332.0" prefWidth="2.0" />
+   </children>
+</fx:root>
